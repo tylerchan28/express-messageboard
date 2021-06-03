@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1= title 
+  
+  p  
+    a(href="/new") Create new message
+
+  each message in messages 
+    div.message
+      p.message_input #{message.text}
+      p.message_input by #{message.user}
+      p.message_input Posted #{message.added}

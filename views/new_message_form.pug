@@ -1,0 +1,10 @@
+extends layout 
+
+block content 
+  h1= title
+
+  form(method="POST", action="")
+    div.new-message 
+      textarea(type="text", placeholder="Write a message...", name="text", required="true")
+      input(type="text", placeholder="Your name here...", name="user", required="true")
+    button(type="submit") Submit
